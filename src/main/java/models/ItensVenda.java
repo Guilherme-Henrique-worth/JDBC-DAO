@@ -9,7 +9,7 @@ package models;
  *
  * @author guilh
  */
-public class Itens_venda {
+public class ItensVenda {
 
     /**
      * @return the quantidade

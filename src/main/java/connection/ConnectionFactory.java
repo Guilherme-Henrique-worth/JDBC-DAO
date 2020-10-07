@@ -9,8 +9,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import static java.util.jar.Pack200.Packer.PASS;
-import java.util.logging.Logger;
+
 
 
 
@@ -20,7 +19,7 @@ import java.util.logging.Logger;
  */
 public class ConnectionFactory {
     final static String DRIVER = "com.mysql.jdbc.Driver";
-    final static String DATABASE_URL = "jdbc:mysql://localhost:1433/pratica03";
+    final static String DATABASE_URL = "jdbc:mysql://localhost:1433/lpbdalpoo";
     Connection connection = null;
 
     
