@@ -5,7 +5,14 @@
  */
 package main;
 
-import pacoteDAO.ClienteDAO;
+import listagem.ClienteEmail;
+import models.Cliente;
+import models.Distribuidores;
+import models.Produtos;
+import models.Vendas;
+import pacoteDAO.*;
+
+import java.util.List;
 
 /**
  *
@@ -14,6 +21,7 @@ import pacoteDAO.ClienteDAO;
 public class main {
     public static void main(String args[])
     {
-        ClienteDAO.create();
+        List<Cliente> c = ClienteEmail.read();
+        System.out.println(c);
     }
 }
