@@ -19,7 +19,7 @@ public class ClienteEmail {
         List<Cliente> cliList = new ArrayList<Cliente>();
 
         try {
-            stmt = con.prepareStatement("SELECT * FROM cliente");
+            stmt = con.prepareStatement("SELECT * FROM cliente WHERE email is null");
             rs = stmt.executeQuery();
 
             while (rs.next()) {

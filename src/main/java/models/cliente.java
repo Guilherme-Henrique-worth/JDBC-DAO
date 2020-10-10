@@ -78,16 +78,32 @@ public class Cliente {
     public void setEmail(String email) {
         this.email = email;
     }
-    
-    
-    
-    
-    
-    
+
+
+    public int getCod_cli() {
+        return cod_cli;
+    }
+
+    public void setCod_cli(int cod_cli) {
+        this.cod_cli = cod_cli;
+    }
+
+    private int cod_cli;
     private String nome;
     private Date data_nasc;
     private String endereço;
     private String telefone;
     private String email;
-    
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "cod_cli=" + cod_cli +
+                ", nome='" + nome + '\'' +
+                ", data_nasc=" + data_nasc +
+                ", endereço='" + endereço + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", email='" + email + '\'' +
+                '}'+'\n';
+    }
 }

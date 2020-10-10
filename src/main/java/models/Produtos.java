@@ -96,13 +96,34 @@ public class Produtos {
     public void setDist_cod_dist(int dist_cod_dist) {
         this.dist_cod_dist = dist_cod_dist;
     }
-    
-    
-    
+
+
+    public int getCod_prod() {
+        return cod_prod;
+    }
+
+    public void setCod_prod(int cod_cli) {
+        this.cod_prod = cod_cli;
+    }
+
+    private int cod_prod;
     private int preço_venda;
     private String descriçao;
     private Date data_validade;
     private int preço_custo;
     private int estoque;
     private int dist_cod_dist;
+
+    @Override
+    public String toString() {
+        return "Produtos{" +
+                "cod_cli=" + cod_prod +
+                ", preço_venda=" + preço_venda +
+                ", descriçao='" + descriçao + '\'' +
+                ", data_validade=" + data_validade +
+                ", preço_custo=" + preço_custo +
+                ", estoque=" + estoque +
+                ", dist_cod_dist=" + dist_cod_dist +
+                '}'+'\n';
+    }
 }

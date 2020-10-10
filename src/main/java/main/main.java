@@ -6,6 +6,9 @@
 package main;
 
 import listagem.ClienteEmail;
+import listagem.ProdutoVencido;
+/*import listagem.Vendas2020;*/
+import listagem.Vendas2020;
 import models.Cliente;
 import models.Distribuidores;
 import models.Produtos;
@@ -21,7 +24,9 @@ import java.util.List;
 public class main {
     public static void main(String args[])
     {
-        List<Cliente> c = ClienteEmail.read();
-        System.out.println(c);
+        List<Vendas> ven = Vendas2020.read();
+        System.out.println(ven);
+
+
     }
 }
