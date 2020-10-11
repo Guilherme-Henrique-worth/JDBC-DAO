@@ -24,11 +24,11 @@ public class ValorTotal {
 
             while (rs.next()) {
 
-                ValorTotal ven = new ValorTotal();
+                ValorTotal val = new ValorTotal();
 
 
 
-                ValorTotalList.add(ven);
+                ValorTotalList.add(val);
             }
 
 

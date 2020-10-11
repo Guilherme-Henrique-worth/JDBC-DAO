@@ -6,7 +6,8 @@
 package models;
 
 
-import java.time.LocalDateTime;
+import java.sql.Date;
+
 /**
  *
  * @author guilh
@@ -17,14 +18,14 @@ public class Vendas {
     /**
      * @return the data_hora
      */
-    public LocalDateTime getData_hora() {
+    public Date getData_hora() {
         return data_hora;
     }
 
     /**
      * @param data_hora the data_hora to set
      */
-    public void setData_hora(LocalDateTime data_hora) {
+    public void setData_hora(Date data_hora) {
         this.data_hora = data_hora;
     }
 
@@ -55,10 +56,38 @@ public class Vendas {
     public void setCli_cod_cli(int cli_cod_cli) {
         this.cli_cod_cli = cli_cod_cli;
     }
-    
-    
-    
-    private LocalDateTime data_hora;
+
+
+    public int getCod_venda() {
+        return cod_vendas;
+    }
+
+    public void setCod_venda(int cod_venda) {
+        this.cod_vendas = cod_venda;
+    }
+
+    private int cod_vendas;
+    private Date data_hora;
     private int total;
     private int cli_cod_cli;
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    private int quantidade;
+
+
+    @Override
+    public String toString() {
+        return "Vendas{" +
+                ", cli_cod_cli=" + cli_cod_cli +
+                ", quantidade=" + quantidade +
+                '}'+"\n";
+    }
 }
+
